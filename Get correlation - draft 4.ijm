@@ -168,7 +168,7 @@ function registerStack(i, interline_boundary){
 		run("Concatenate...", "  title=Reg_Pair open image1=Ref_Slice image2=Reg_Slice image3=[-- None --]");
 		selectWindow("Reg_Pair");
 		setSlice(1);
-		run("StackReg ", "transformation=Affine");
+		run("StackReg", "transformation=Affine");
 		selectWindow("Reg_Pair");
 
 		run("Re-order Hyperstack ...", "channels=[Frames (t)] slices=[Slices (z)] frames=[Channels (c)]");
